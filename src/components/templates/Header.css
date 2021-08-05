@@ -2,9 +2,10 @@ header.header {
     width: 600px;
     padding: 10px 10px;
     height: 30px;
+    z-index: 1;
     display: flex;
-    z-index: 2;
     justify-content: space-between;
+    align-items: center;
 }
 
 

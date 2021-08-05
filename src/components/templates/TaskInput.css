@@ -1,0 +1,8 @@
+.inputBox {
+    z-index: 1;
+    width: 500px;
+}
+
+.inputBox.light {
+    background-color: white;
+}
