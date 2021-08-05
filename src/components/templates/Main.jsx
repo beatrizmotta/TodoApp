@@ -15,10 +15,15 @@ class Main extends React.Component {
             theme: ''
         }
         this.handleChangeOfTheme = this.handleChangeOfTheme.bind(this)
+        this.handleTask = this.handleTask.bind(this)
     }
 
     handleChangeOfTheme(theme) {
         this.setState({theme})
+    }
+
+    handleTask(task) {
+        console.log(task)
     }
 
     render() {
@@ -26,8 +31,8 @@ class Main extends React.Component {
             <div className={`app ${this.state.theme === 'light' ? 'dark' : 'light'}`}>
                 <Cover theme={this.state.theme}/>
                 <Header getThemeToMain={this.handleChangeOfTheme}/>
-                <TaskInput theme={this.state.theme}/>
-                <TasksContainer />
+                <TaskInput theme={this.state.theme} getTaskToMain={this.handleTask}/>
+                <TasksContainer theme={this.state.theme} />
             </div>
         )
     }
