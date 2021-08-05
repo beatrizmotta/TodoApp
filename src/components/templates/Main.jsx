@@ -3,6 +3,7 @@ import './Main.css'
 import Header from './Header'
 import Cover from './Cover'
 import TaskInput from './TaskInput'
+import TasksContainer from './TasksContainer'
 
 // App por inteiro
 
@@ -26,6 +27,7 @@ class Main extends React.Component {
                 <Cover theme={this.state.theme}/>
                 <Header getThemeToMain={this.handleChangeOfTheme}/>
                 <TaskInput theme={this.state.theme}/>
+                <TasksContainer />
             </div>
         )
     }

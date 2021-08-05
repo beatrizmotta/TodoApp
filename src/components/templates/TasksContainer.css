@@ -1,0 +1,13 @@
+.tasks {
+    z-index: 2;
+    background-color: white;
+    width: 510px;
+    height: 30px;
+    font-size: 1.3em;
+    padding: 10px 10px;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: ccenter;
+
+}

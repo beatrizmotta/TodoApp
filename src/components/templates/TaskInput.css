@@ -1,8 +1,54 @@
 .inputBox {
     z-index: 1;
-    width: 500px;
+    width: 510px;
+    border-radius: 5px;
+    height: 30px;
+    padding: 10px 10px;
+    display: flex;
+}
+input.taskInput {
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+    width: 92%;
+    font-family: inherit;
+    font-size: 1.3em;
+    padding-top: 5px;
+    border: 0;
+    
 }
 
 .inputBox.light {
     background-color: white;
+}
+.inputBox.dark {
+    background-color: hsl(237, 14%, 26%);
+    color: white;
+}
+
+.checkmark_outer {
+    align-self: center;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    z-index: 1;
+    background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%))
+}
+.checkmark_inner {
+    background-color: white;
+    width: 85%;
+    height: 85%;
+    border-radius: 100%;
+    z-index: 2;
+}
+
+.checkmark_inner.light {
+    background-color: white;
+}
+.checkmark_inner.dark {
+    background-color: hsl(237, 14%, 26%);
 }
