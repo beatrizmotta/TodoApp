@@ -1,0 +1,12 @@
+.app {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.app.light {
+    background-color: white;
+}
+.app.dark {
+    background-color: hsl(235, 21%, 11%);
+}
