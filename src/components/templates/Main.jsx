@@ -16,7 +16,6 @@ class Main extends React.Component {
     }
 
     handleChangeOfTheme(theme) {
-        console.log()
         this.setState({theme})
     }
 

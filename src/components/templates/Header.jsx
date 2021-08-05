@@ -14,17 +14,9 @@ class Header extends React.Component {
         this.changeTheme = this.changeTheme.bind(this)
     }
 
-    toggle(currentTheme) {
-        if (currentTheme === 'light') {
-            return 'dark'
-        } else if (currentTheme === 'dark') {
-            return 'light'
-        }
-    }
-
     changeTheme() {
         //Muda o tema e passa a informação para o componente Main
-        this.setState({theme: `${this.toggle(this.state.theme)}`})
+        this.setState({theme: `${this.state.theme === 'light' ? 'dark' : 'light'}`})
         this.props.getThemeToMain(this.state.theme)
     }
 
