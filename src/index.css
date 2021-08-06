@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.checkmark_outer {
+  align-self: center;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  z-index: 1;
+  background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%))
+}
+.checkmark_outer:hover {
+  cursor: pointer;
+}
+.checkmark_inner {
+  background-color: white;
+  width: 21px;
+  height: 20.5px;
+  border-radius: 100%;
+  z-index: 2;
+}
+
+.checkmark_inner.light {
+  background-color: white;
+}
+.checkmark_inner.dark {
+  background-color: hsl(237, 14%, 26%);
+}
