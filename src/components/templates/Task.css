@@ -1,0 +1,16 @@
+.task {
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px 10px;
+    width: 510px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px rgb(219, 218, 218) solid;
+}
+.task:nth-last-of-type(1) {
+    border-radius: 5px;
+}
+.task p { 
+    padding-top: 1px;
+}
