@@ -2,7 +2,7 @@ import React from 'react'
 import './Header.css'
 import Logo from './Logo'
 
-import {toggle} from '../../utils/utils'
+import {toggleTheme} from '../../utils/utils'
 
 import sunIcon from '../../assets/images/icon-sun.svg' 
 import moonIcon from '../../assets/images/icon-moon.svg'
@@ -19,7 +19,7 @@ class Header extends React.Component {
 
     changeTheme() {
         //Muda o tema e passa a informação para o componente Main
-        this.setState({theme: `${toggle(this.state.theme)}`})
+        this.setState({theme: `${toggleTheme(this.state.theme)}`})
         this.props.getThemeToMain(this.state.theme)
     }
 

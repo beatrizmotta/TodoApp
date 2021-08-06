@@ -1,6 +1,6 @@
 import React from 'react'
 import './TaskInput.css'
-import {toggle} from '../../utils/utils'
+import {toggleTheme} from '../../utils/utils'
 import Checkmark from './Checkmark'
 
 const initialState = {
@@ -34,7 +34,7 @@ class TaskInput extends React.Component {
 
     render() {
         return(
-            <div className={`inputBox ${toggle(this.props.theme)}`}>
+            <div className={`inputBox ${toggleTheme(this.props.theme)}`}>
                 <Checkmark />
                 <input onChange={(e) => this.handleInput(e)} onKeyPress={(e) => this.submitInput(e)} type="text" placeholder="Create a new todo..." className="taskInput" />
             </div>

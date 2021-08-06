@@ -1,10 +1,9 @@
 import React from 'react'
 import './Task.css'
+import Checkmark from './Checkmark'
 
 export default props => 
     <div className="task">
-        <div className="checkmark_outer">
-            <div className="checkmark_inner"></div>
-        </div>
+        <Checkmark />
         <p>{props.children}</p>
         </div>

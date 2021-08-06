@@ -16,6 +16,9 @@
     height: 20.5px;
     border-radius: 100%;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .checkmark_inner.light {
@@ -23,4 +26,21 @@
 }
 .checkmark_inner.dark {
     background-color: hsl(237, 14%, 26%);
+}
+
+.checkmark_outer:hover {
+    cursor: pointer;
+}
+
+.checkmark_inner img {
+    width: 15px;
+    height: auto;
+    user-select: none;
+}
+
+.checked {
+    background-color: transparent;
+}
+.unchecked {
+    /* box-shadow: 10px 10px 10px blue; */
 }
